@@ -1,29 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
-</head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="C:\tink-her-hack\style.css">
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your website description" />
+    <title>Yumm</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar" id="navbar">
-          <div class="hamburger-menu">
-            <span class="line"></span>
-            <span class="line"></span>
+      <nav class="navbar" id="navbar">
+        <div class="logo">
+          <a href="#home">Yumm</a>
+        </div>
+        <div
+          class="hamburger-menu"
+          role="button"
+          aria-label="Toggle navigation"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#details" class="nav-link">Details</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <!-- Hero Section -->
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <p class="label-2 section-subtitle slider-reveal">
+                Traditional & Hygiene
+              </p>
+              <h1 class="display-1 hero-title slider-reveal">
+                For the love of <br />
+                delicious food
+              </h1>
+              <p class="body-2 hero-text slider-reveal">
+                Come with your family and enjoy mouthwatering food at the spot
+              </p>
+              <button class="button">Order Now</button>
+              <button class="button">Book Now</button>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <section
+    class="section service bg-black-10 text-center"
+    aria-label="service"
+  >
+    <div class="container">
+      <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+      <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+      <p class="section-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry lorem Ipsum has been the industrys standard dummy text
+        ever.
+      </p>
+
+      <ul class="grid-list">
+        <li>
+          <div class="service-card">
+            <a href="#" class="has-before hover:shine">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 285; --height: 336"
+              >
+                <img
+                  src="./assets/images/service-1.jpg"
+                  width="285"
+                  height="336"
+                  loading="lazy"
+                  alt="Breakfast"
+                  class="img-cover"
+                />
+              </figure>
+            </a>
+
+            <div class="card-content">
+              <h3 class="title-4 card-title">
+                <a href="#">Breakfast</a>
+              </h3>
+
+              <a href="#" class="btn-text hover-underline label-2"
+                >View Menu</a
+              >
+            </div>
           </div>
-          <div class="nav-menu hide">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Details">Details</a>
-            <a href="#Contact">Contact</a>
+        </li>
+
+        <li>
+          <div class="service-card">
+            <a href="#" class="has-before hover:shine">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 285; --height: 336"
+              >
+                <img
+                  src="./assets/images/service-2.jpg"
+                  width="285"
+                  height="336"
+                  loading="lazy"
+                  alt="Appetizers"
+                  class="img-cover"
+                />
+              </figure>
+            </a>
+
+            <div class="card-content">
+              <h3 class="title-4 card-title">
+                <a href="#">Appetizers</a>
+              </h3>
+
+              <a href="#" class="btn-text hover-underline label-2"
+                >View Menu</a
+              >
+            </div>
           </div>
-        </nav>
-      </header>
-  <script src="script.js"></script>
-</body>
+        </li>
+
+        <li>
+          <div class="service-card">
+            <a href="#" class="has-before hover:shine">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 285; --height: 336"
+              >
+                <img
+                  src="./assets/images/service-3.jpg"
+                  width="285"
+                  height="336"
+                  loading="lazy"
+                  alt="Drinks"
+                  class="img-cover"
+                />
+              </figure>
+            </a>
+
+            <div class="card-content">
+              <h3 class="title-4 card-title">
+                <a href="#">Drinks</a>
+              </h3>
+
+              <a href="#" class="btn-text hover-underline label-2"
+                >View Menu</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+
+     
+    </div>
+  </section>
+    <script src="script.js"></script>
+  </body>
 </html>
