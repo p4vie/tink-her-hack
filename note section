@@ -1,0 +1,21 @@
+/* Navbar Styling for Desktop View */
+@media screen and (min-width: 600px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+  .nav-menu {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+    z-index: auto;
+  }
+  .nav-menu a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
