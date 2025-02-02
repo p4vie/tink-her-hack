@@ -551,124 +551,10 @@ article {
   right: 10px;
 }
 
-/*-----------------------------------*\
-  #PRELOAD
-\*-----------------------------------*/
-
-.preload {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--gold-crayola);
-  z-index: 10;
-  display: grid;
-  place-content: center;
-  justify-items: center;
-  transition: var(--transition-2);
-}
-
-.preload > * {
-  transition: var(--transition-1);
-}
-
-.preload.loaded > * {
-  opacity: 0;
-}
-
-.preload.loaded {
-  transition-delay: 250ms;
-  transform: translateY(100%);
-}
-
-.circle {
-  width: 112px;
-  height: 112px;
-  border-radius: var(--radius-circle);
-  border: 3px solid var(--white);
-  border-block-start-color: var(--smoky-black-3);
-  margin-block-end: 45px;
-  animation: rotate360 1s linear infinite;
-}
-
-@keyframes rotate360 {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-.preload .text {
-  background-image: var(--loading-text-gradient);
-  background-size: 500%;
-  font-size: calc(2rem + 3vw);
-  font-weight: var(--weight-bold);
-  line-height: 1em;
-  text-transform: uppercase;
-  letter-spacing: 16px;
-  padding-inline-start: 16px;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0.5px var(--eerie-black-3);
-  animation: loadingText linear 2s infinite;
-}
-
-@keyframes loadingText {
-  0% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 0%;
-  }
-}
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
-.header .btn {
-  display: none;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-  padding-block: 40px;
-  z-index: 4;
-  border-block-end: 1px solid transparent;
-  transition: var(--transition-1);
-}
-
-.header.active {
-  padding-block: 20px;
-  background-color: var(--eerie-black-4);
-  border-color: var(--black-alpha-15);
-}
-
-.header.hide {
-  transform: translateY(-100%);
-  transition-delay: 250ms;
-}
-
-.header .container {
-  padding-inline: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-}
 
 
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
+
+
 
 .service .section-title {
   margin-block-end: 16px;
@@ -787,9 +673,7 @@ article {
   animation: rotate360 15s linear infinite;
 }
 
-/*-----------------------------------*\
-  #SPECIAL DISH
-\*-----------------------------------*/
+
 
 .special-dish-content {
   padding-block: 70px;
@@ -826,9 +710,7 @@ article {
 }
 
 
-/*-----------------------------------*\
-  #RESERVATION
-\*-----------------------------------*/
+
 .reservation {
   margin-top: 20%;
 }
@@ -870,9 +752,7 @@ textarea.input-field {
   width: 100%;
 }
 
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
+
 
 .features .section-title {
   margin-block-end: 40px;
@@ -1116,10 +996,7 @@ textarea.input-field {
     width: 100%;
   }
 }
-  /**
-   * SERVICE
-   */
-
+  
   .service .shape {
     display: block;
   }
@@ -1134,9 +1011,7 @@ textarea.input-field {
     right: 0;
   }
 
-  /**
-   * ABOUT
-   */
+  
 
   .about .container {
     grid-template-columns: 0.7fr 1fr;
@@ -1145,9 +1020,6 @@ textarea.input-field {
 
   
 
-  /**
-   * RESERVATION
-   */
 
   .reservation-form {
     display: grid;
@@ -1155,15 +1027,10 @@ textarea.input-field {
   }
 
   
-/**
- * responsive for larger than 1200px screen
- */
+
 
 @media (min-width: 1200px) {
-  /**
-   * CUSTOM PROPERTY
-   */
-
+ 
   :root {
     /**
      * typography
@@ -1172,9 +1039,7 @@ textarea.input-field {
     --fontSize-title-2: 2.5rem;
   }
 
-  /**
-   * REUSED STYLE
-   */
+  
 
   .container,
   :is(.service, .event) .container {
@@ -1183,13 +1048,7 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-  /**
-   * HEADER
-   */
-
-  /**
-   * SERVICE
-   */
+ 
 
   .service .grid-list {
     gap: 150px;
@@ -1203,31 +1062,18 @@ textarea.input-field {
     margin-block-end: 75px;
   }
 
-  /**
-   * ABOUT
-   */
-
   .about {
     padding-block: 170px 100px;
   }
 
-  /**
-   * MENU
-   */
-
   
-  /**
-   * FEATURES
-   */
+ 
 
   .features .grid-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/**
- * responsive for larger than 1400px screen
- */
 
 @media (min-width: 1400px) {
   
@@ -1242,9 +1088,6 @@ textarea.input-field {
     left: 0;
   }
 
-  /**
-   * FEATURES
-   */
 
   .features {
     overflow: visible;
@@ -1264,14 +1107,14 @@ textarea.input-field {
     left: 0;
   }
 }
-/* Button Styles */
+
 .btn {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  border: 2px solid var(--purple); /* Add border with var(--purple) */
+  border: 2px solid var(--purple); 
   border-radius: 30px;
-  background: transparent; /* Transparent background */
+  background: transparent; 
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -1298,8 +1141,8 @@ textarea.input-field {
 }
 
 .btn:hover {
-  background: var(--purple); /* Change background to var(--purple) on hover */
-  border-color: var(--purple); /* Ensure border color matches on hover */
+  background: var(--purple);
+  border-color: var(--purple); 
 }
 
 .btn:hover .text-1 {
@@ -1310,12 +1153,12 @@ textarea.input-field {
   top: 0;
 }
 
-/* Input Box Styles */
+
 .input-field {
   width: 100%;
   padding: 15px 15px 15px 50px;
   border: none;
-  border-radius: 0; /* Sharp edges */
+  border-radius: 0; 
   background: rgba(255, 255, 255, 0.1);
   color: #000000;
   font-size: 16px;
@@ -1332,7 +1175,7 @@ a{
   border: var(purple);
   border-radius: 1cm;
 }
-/* General Footer Styles */
+
 .footer {
   position: relative;
   padding: 60px 0;
@@ -1356,7 +1199,7 @@ a{
   z-index: 1;
 }
 
-/* Footer Top Section */
+
 .footer-top {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1364,7 +1207,7 @@ a{
   margin-bottom: 40px;
 }
 
-/* Footer Brand Section */
+
 .footer-brand {
   position: relative;
 }
@@ -1507,7 +1350,7 @@ a{
   font-size: 18px;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .footer-top {
     grid-template-columns: 1fr;
@@ -1527,7 +1370,7 @@ a{
     width: 100%;
   }
 }
-/* General Input Field Styles (for all input fields except reservation form) */
+
 .input-field {
   background-color: var(--eerie-black-2);
   color: var(--white);
@@ -1547,34 +1390,34 @@ a{
   border-color: var(--gold-crayola);
 }
 
-/* Reservation Form Input Fields (specific styles) */
+
 .reservation-form .input-field {
-  background-color: transparent; /* Reset background */
-  border: 2px solid var(--purple); /* Custom border */
-  border-radius: 8px; /* Rounded corners */
-  color: var(--white); /* Text color */
-  padding: 12px 20px; /* Padding */
-  margin-block-end: 15px; /* Spacing */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  background-color: transparent; 
+  border: 2px solid var(--purple);
+  border-radius: 8px; 
+  color: var(--white); 
+  padding: 12px 20px; 
+  margin-block-end: 15px; /
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .reservation-form .input-field::placeholder {
-  color: rgba(255, 255, 255, 0.6); /* Placeholder color */
+  color: rgba(255, 255, 255, 0.6); 
 }
 
 .reservation-form .input-field:focus {
-  border-color: var(--light-blue); /* Focus border color */
-  box-shadow: 0 0 8px rgba(176, 177, 255, 0.5); /* Glow effect on focus */
+  border-color: var(--light-blue); 
+  box-shadow: 0 0 8px rgba(176, 177, 255, 0.5); 
 }
 
-/* Icon Wrapper in Reservation Form */
+
 .reservation-form .icon-wrapper {
   position: relative;
   margin-block-end: 15px;
 }
 
 .reservation-form .icon-wrapper .input-field {
-  padding-inline-start: 40px; /* Add space for icons */
+  padding-inline-start: 40px; 
 }
 
 .reservation-form .icon-wrapper ion-icon {
@@ -1594,7 +1437,7 @@ a{
   right: 10px;
 }
 
-/* Button in Reservation Form */
+
 .reservation-form .btn {
   background-color: var(--purple);
   color: var(--white);
